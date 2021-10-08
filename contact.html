@@ -8,7 +8,7 @@
   <title>Contact Us - MR.COFFEE</title>
   <meta name="description" content="Mr.Coffee, Address:15 place Jules Guesde 75006 Paris | Tel : +33 9 46 25 78 45 | Mail : contact@mr-coffee.co" />
 
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="application.css">
 </head>
 
@@ -25,11 +25,47 @@
     </nav>
   </header>
   
-  <main>
-    <section class="contact">
-      <img class="logo-mrcoffee" src="Assets/logo_mrcoffee.png" alt="logo mrcoffee">
+  <!-- Popup -->
+  <modal id="popup" class="popup">
+    <div class="popup-content position-relative">
+      <img class="logo-popup position-absolute"  src="Assets/logo_dark.png">
+      <div class="popup-text-box">
+        <h1 class="margin-top40">MERCI</h1>
+        <h1 class="margin-top20">Votre message a bien été envoyé !</h1>
+        <p class="margin-top40">Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+      </div>
+      <button id="popupclose" class="btn btn1 margin-top40 margin-bottom40" type="button">FERMER</button>
+    </div>
+  </modal>
 
-      <h2>On vous attend !</h2>
+  <main>
+
+    <img class="logo-mrcoffee" src="Assets/logo_mrcoffee.png" alt="logo mrcoffee">
+
+    <section class="contactform">
+      <h2 class="margin-bottom20">Dites nous tout !</h2>
+      <form id="myForm" novalidate="true">
+        <label>Nom *</label> <label id="errname" class="red"></label>
+        <input id="name" name="name" type="text">
+
+        <label>Prénom *</label> <label id="errfname" class="red"></label>
+        <input id="fname" name="fname" type="text">
+
+        <label>Téléphone</label> <label id="errphone" class="red"></label>
+        <input id="phone" name="phone" type="text">
+
+        <label>Adresse mail *</label> <label id="erremail" class="red"></label>
+        <input id="email" name="email" type="text">
+
+        <label>Message *</label> <label id="errmessage" class="red"></label>
+        <textarea id="message" name="message" placeholder="Tapez votre message ici"></textarea>
+        <button id="btnSubmit" class="btn btn1 margin-top20" type="submit">Send</button>
+      </form>
+
+    </section>
+  
+    <section class="contact-info">
+      <h2 class="margin-top40">On vous attend !</h2>
 
       <p class="margin-top60 font-bold">Mr.Coffee</p>
       <p>15 place Jules Guesde <br>
@@ -38,7 +74,7 @@
         Tel : +33 9 46 25 78 45<br>
         Mail : contact@mr-coffee.co</p>
 
-      <img class="margin-top60" src="Assets/carte_contact.png" alt="mrcoffee_carte_contact">
+      <img class="map margin-top60" src="Assets/carte_contact.png" alt="mrcoffee_carte_contact">
     </section>
   </main>
 
@@ -55,5 +91,6 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>
