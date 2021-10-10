@@ -4,99 +4,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="application.css">
   <title>mrcoffee.com</title>
   <meta name="description" content="MR.COFFEE is a cafe in Paris. We are at the rear of 15 place Jules Guesde. We care about fast and consistently delicious coffee and pastries, delivered with genuinely caring and friendly service. We also sell coffee (whole beans or ground) to take home and brew for yourself." />
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="application.css">
 </head>
 
 <body>
   <header>
     <nav>
-      <img id="full-logo-white" src="Assets/full_logo_white.png" alt="white_logo">
-      <div id="menu-icon" class="menu-icon">&#9776;</div>
-      <ul class="menu" id="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <img class="full-logo-white" src="Assets/full_logo_white.png" alt="white_logo">
+      <div id="menu-icon" class="hamburger">&#9776;</div>
+        <ul class="nav-box" id="menu">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About Us</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
    </nav>
   </header>
 
   <main>
     <img class="logo-mrcoffee" src="Assets/logo_mrcoffee.png" alt="logo_mrcoffee">
 
-    <div class="mr_coffee_salle">
-      <img src="Assets/mr_coffee_salle.jpg" alt="mr_coffee_salle">
-      <p>DÉCOUVREZ NOTRE CAFÉ PHILO</p>
+    <div class="hypography">
+      <img class="hypography__img" src="Assets/mr_coffee_salle.jpg" alt="mr_coffee_salle">
+      <p class="hypography__text">DÉCOUVREZ NOTRE CAFÉ PHILO</p>
     </div>
     
-    <h1>Chez Mr.Coffee, <br>nous aimons trois choses</h1>
+    <h1 class="margin--top40 text--center">Chez Mr.Coffee, <br>nous aimons trois choses</h1>
     
-    <section class="flex-container margin-top60">
-      <div class="flex-item flex3cols greybox margin-top20">
-        <img src="Assets/icon_cafe.png" alt="mrcoffee_cafe">
+    <section class="card-box margin--top40">
+      <div class="card">
+        <img class="card__img" src="Assets/icon_cafe.png" alt="mrcoffee_cafe">
         <h3>Le bon café</h3>
-        <p class="whitetext-small">Nos priorités : la qualité et le goût.Tous nos cafés sont soigneusements séléctionnés en accord avec nos valeurs de respect de la nature et des hommes.</p>
+        <p class="content text--white">Nos priorités : la qualité et le goût.Tous nos cafés sont soigneusements séléctionnés en accord avec nos valeurs de respect de la nature et des hommes.</p>
       </div>
-      <div class="flex-item flex3cols greybox margin-top20">
-        <img src="Assets/icon_gens.png" alt="les_gen">
+      <div class="card">
+        <img class="card__img" src="Assets/icon_gens.png" alt="les_gen">
         <h3>Les gens</h3>
-        <p class="whitetext-small">Nous sommes de ceux qui pensent 
+        <p class="content text--white">Nous sommes de ceux qui pensent 
           qu’ensemble, nous allons plus loin.
           C’est pourquoi chez Mr.Coffee, notre 
           mission est de rassembler les gens en 
           leur offrant un lieu de liberté et de 
           partages.</p>
       </div>
-      <div class="flex-item flex3cols greybox margin-top20">
-        <img src="Assets/icon_histoires.png" alt="histoires">
+      <div class="card">
+        <img class="card__img"  src="Assets/icon_histoires.png" alt="histoires">
         <h3>Les histoires</h3>
-        <p class="whitetext-small">Chez Mr.Coffee, que vous soyez 
+        <p class="content text--white">Chez Mr.Coffee, que vous soyez 
           poête, fantasque ou philosophe, nous 
           vous offrons un lieu pour parler de 
           vos histoires, ou pour les écrire.</p>
       </div>
     </section>
 
-    <div class="btn cursor-pointer">
-      <p>En savoir plus</p>
-    </div>
+    <button>En savoir plus</button>
     
     <h1>Découvrez notre progamme</h1>
 
-    <section>
-      <div class="box-open margin-top60">
+    <section class="margin--top40">
+      <div class="box-open">
         <img class="ico-open" src="Assets/icon_open.png" alt="open">
-        <h5>Votre café vous accueille 7j/7 :</h5>
+        <p>Votre café vous accueille 7j/7 :</p>
       </div>
       
-      <div class="flex-container">
-        <div class="flex-item flex2cols whitebox">
+      <div class="event-box">
+        <div class="event-card">
           <p>Tous les mardis, <br>
-            retrouvez <span class="text-bold">les cafés poésies :</span>
+            retrouvez <span class="text--bold">les cafés poésies :</span>
           </p>
-          <p class="text-bold">Venez écouter ou lire vos plus beaux poèmes : Mr.Coffee offre une consommation à tous les courageux !
+          <p class="text--bold">Venez écouter ou lire vos plus beaux poèmes : Mr.Coffee offre une consommation à tous les courageux !
           </p>
         </div>
-        <div class="flex-item flex2cols whitebox margin-top5">
+        <div class="event-card">
           <p>Tous les jeudis, <br>
-            retrouvez <span class="text-bold">les cafés philo et débat :</span></p>
-          <p class="text-bold">Autour d’un thème philosophique ou de société, venez débattre entre experts ou simple curieux.</p>
+            retrouvez <span class="text--bold">les cafés philo et débat :</span></p>
+          <p class="text--bold">Autour d’un thème philosophique ou de société, venez débattre entre experts ou simple curieux.</p>
         </div>
       </div>
     </section>
 
-    <p class="text-center margin-top60">Sans oublier nos ateliers d’écritures et évènements excéptionnels !</p>
-    <h2 class="text-center margin-top60 margin-bottom60">Rendez-vous sur notre page Contact pour retrouver <br>
+    <p class="text--center margin--top60">Sans oublier nos ateliers d’écritures et évènements excéptionnels !</p>
+    <h2 class="text--center margin--top60 margin--bottom60">Rendez-vous sur notre page Contact pour retrouver <br>
       toutes les infos pratiques</h2>
   </main>
-  <footer class="margin-top60">
-    <img src="Assets/logo_blanc.png" alt="logo_blanc">
-    <div>
-      <p class="margin-top40 whitetext-small">Suivez nous sur les réseaux sociaux !
+
+  <footer class="margin--top60">
+    <img class="logo-blanc" src="Assets/logo_blanc.png" alt="logo_blanc">
+    <div class="social-box">
+      <p class="margin--top40 text--white">Suivez nous sur les réseaux sociaux !
       </p>
       <p>
         <img class="ico-social" src="Assets/logo_linkedin.png" alt="linkedin">
