@@ -34,7 +34,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
     let iNput, txtErr, tick
     let isMatch
 
-    for (let i = 0; i < allInput.length; i++) {
+    for (let i in allInput) {
       iNput = document.querySelector("#" + allInput[i])
       txtErr = document.querySelector("#err" + iNput.id)
       iNput.value = iNput.value.trim()
@@ -67,7 +67,7 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
   function resetValue(){
     document.querySelector("#myForm").reset();
 
-    for(let i = 0; i < allInput.length; i++){
+    for(let i in allInput){
       txtErr = document.querySelector("#err" + allInput[i])
       txtErr.innerHTML = "";
     }
