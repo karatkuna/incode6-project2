@@ -8,6 +8,11 @@
 ### Languages:
 HTML, CSS, Javascript
 
+## Installation
+1. Clone project: git clone https://github.com/karatkuna/mrcoffee-website.git
+2. Approach folder: cd mrcoffee-website
+3. Run project: live-server
+
 ### App Pictures
 ![alt text](https://github.com/karatkuna/mrcoffee-website/blob/master/app-img/homepage.png?raw=true)
 
